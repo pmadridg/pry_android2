@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.isil.am2template">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="Eventos Peru"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".BuffetActivity"
+            android:label="Tipos de Buffet"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".CartActivity"
+            android:label="Carrito"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".PlaceActivity"
+            android:label="Locales Disponibles"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Eventos"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NoteActivity"
+            android:label="@string/title_activity_note"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DashboardActivity"
+            android:theme="@style/NavAppTheme" ></activity>
+    </application>
+
+</manifest>

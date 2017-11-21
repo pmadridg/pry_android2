@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tviTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tviCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tviTitle"
+            android:text="Codigo"
+            />
+        <TextView
+            android:id="@+id/tviPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tviCode"
+            android:text="Precio"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:text="X" />
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.2dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:background="@color/black"
+            android:text="-"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/eteQty"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="#EEE2E2"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@color/black"
+            android:text="+"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
